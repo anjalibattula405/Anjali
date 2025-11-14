@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook login page</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <style>
+        body {
+    background: #f0f2f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 80px;
+}
+
+.fb-info {
+    width: 400px;
+}
+
+.fb-logo {
+    color: #1877f2;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.fb-desc {
+    font-size: 20px;
+    color: #1c1e21;
+}
+
+.login-form {
+    background: #fff;
+    padding: 30px 25px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    min-width: 350px;
+    text-align: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 90%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-btn {
+    background: #1877f2;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    width: 95%;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.forgot-link {
+    display: block;
+    margin: 10px 0;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #dddfe2;
+}
+
+.create-btn {
+    background: #42b72a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 0;
+    width: 60%;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.create-page {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.create-page a {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+     </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fb-info">
+            <h1 class="fb-logo">facebook</h1>
+            <p class="fb-desc">Facebook helps you connect and share<br>with the people in your life.</p>
+        </div>
+        <div class="login-form">
+            <form>
+                <input type="text" placeholder="Email address or phone number">
+                <input type="password" placeholder="Password">
+                <button type="submit" class="login-btn">Log in</button>
+                <a href="#" class="forgot-link">Forgotten password?</a>
+                <hr>
+                <button type="button" class="create-btn">Create new account</button>
+            </form>
+            <div class="create-page">
+                <a href="#">Create a Page</a> for a celebrity, brand or business.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
